@@ -1,0 +1,41 @@
+{
+    "majors": 
+    {
+        "computer_science" :  
+        {
+            "credits"               : 128,
+            "science_electives"     : 3,
+            "technical_electives"   : 24,
+            "electives"             : 6,
+            "min_t_gpa"     : 2.0,
+            "min_o_gpa"       : 2.0,
+            "core": ["MATH 241", "MATH 415", "CS 125", "CS 126", "CS 173", "CS 210", "CS 225", "CS 233", "CS 241", "CS 357", "CS 361", "CS 374", "CS 421"]
+        },
+        "math": {
+            "credits": 120,
+            "science_electives": 0,
+            "technical_electives": 12,
+            "electives"         : 12,
+            "min_t_gpa"     : 0.0,
+            "min_o_gpa"       : 0.0,
+            "core": ["MATH 241", ["MATH 347", "MATH 348"], "MATH 416", ["MATH 417", "MATH 427"], ["MATH 424", "MATH 444", "MATH 447"], ["MATH 461", "STAT 400"], ["CS 101", "CS 125"]]
+        }
+    },
+    "classes":
+    {
+        "MATH 241"  : 4,
+        "MATH 415"  : 3,
+        "MATH 416"  : 3,
+        "CS 125"    : 4,
+        "CS 126"    : 3,
+        "CS 173"    : 3,
+        "CS 210"    : 2,
+        "CS 225"    : 4,
+        "CS 233"    : 4,
+        "CS 241"    : 4,
+        "CS 357"    : 3,
+        "CS 361"    : 3,
+        "CS 374"    : 4
+        
+    }
+}
