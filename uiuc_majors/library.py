@@ -13,16 +13,15 @@ def major(args):
             print(a, sep=', ', end='\n'); # debug
     return args
         
-
+# args - list of the majors wanted
 def major_conflicts(args):
     # We want to do hashtable of "core", and somehow eliminate redundancies
 
     if args is None: 
         print("No major was entered. [libray.py]")
-    
 
-    # for each major that we have, we want to take the credits, and compare it to what our max credits is.
-    # if it is greater than we replace it with our existing value. at end we print out value.
+    # For each major that we have, we want to take the credits, and compare it to what our max credits is.
+    # if it is greater than we replace it with our existing value. At end we print out value.
     info = {
         "credits" : 0,
         "science_electives" : 0,
@@ -67,9 +66,39 @@ def major_conflicts(args):
     return info
             
 # completed - an array of classes that have been completed
-# majors - what majors you are doing. 
-# def tobe_completed(completed, majors):
+# majors - what majors you are doing in an array
+def tobe_completed(completed, majors):
+
+    info = major_conflicts(majors)
     
-    
-    
-    
+    for i in completed:
+        if i in info['core']:
+            info['core'].remove(i)
+    return info
+
+# RETURN sum - return the sum of all the credits for the list of classes
+def sum_credits(classes):
+    class_info = dict(data['classes'])
+    sum = 0
+    for i in classes:
+        if isinstance(i, str):
+            sum += class_info[i] 
+        else :
+            for a in i:
+                if isinstance(a, str):
+                    sum += class_info[a]
+    return sum
+
+# completed - this is an array of completed classes by the student
+# req - the current requirement we are parsing. You pass in a designated index of the core classes 
+# RETURN req - returns the input 'req' if the requirement is completed, else void
+def check_completed(completed, req):
+    if isinstance(req, str):            # Check if the requirement has been completed; if so, return
+        if req in completed:
+            return req
+    else :
+        for i in req:                   # Assumes that we only care if one of the requirements are met in the grouping (ie. MATH 415 or MATH 416)
+            if i in completed:
+                return req
+    return None
+
