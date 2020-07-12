@@ -1,0 +1,109 @@
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
+        <style>
+            * { box-sizing: border-box; }
+            body {
+            font: 16px Arial;
+            padding: 1rem;
+            }
+            .autocomplete {            
+            position: relative;
+            display: inline-block;
+            }
+            input {
+            border: 1px solid transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            }
+            input[type=text] {
+            background-color: #f1f1f1;
+            width: 100%;
+            }            
+            .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;            
+            top: 100%;
+            left: 0;
+            right: 0;
+            }
+            .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #d4d4d4;
+            }
+            .autocomplete-items div:hover {            
+            background-color: #e9e9e9;
+            }
+            .autocomplete-active {            
+            background-color: DodgerBlue !important;
+            color: #ffffff;
+            }
+            button {
+                background-color: dodgerblue;
+                border: none;
+                color: white;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color:lightblue;
+            }            
+
+            .cards {
+                max-width: 800px;
+                margin: 0 auto;
+                display: grid;
+                grid-gap: 1rem;
+            }
+            
+            .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }            
+            .container {
+            padding: 2px 16px;
+            }
+
+            .card {
+                background-color:skyblue;
+                color: white;
+                padding: 1.5rem;
+                height: 4rem;                
+                border-radius:5px;                
+            }            
+            @media (min-width: 600px) {
+            .cards { grid-template-columns: repeat(2, 1fr); }
+            }            
+            @media (min-width: 900px) {
+            .cards { grid-template-columns: repeat(3, 1fr); }
+            }            
+        </style>        
+    </head>
+
+    <body>
+        <center>
+            <div id="input">
+                <p id="selected_majors"><span style="font-weight: bold">Selected Majors: </span> </p>
+                <form autocomplete="off">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="major" type="text" name="myMajor" placeholder="Major...">
+                    </div>
+                    <button type="button" onclick="addMajor()" style="width:70px">Add</button>
+                </form>                
+            </div><br/>    
+            <p style="font-weight: bold; display: none;" id="deg_req_banner">Your Degree Requirements</p>   
+        </center>
+                     
+        <div class="cards"></div>       
+        <script src="query.js"></script>                          
+    </body>
+
+</html>
