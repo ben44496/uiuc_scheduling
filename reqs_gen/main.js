@@ -1,8 +1,9 @@
 /* 
 CURRENT STATE  1.0.0
-- works for many STEM majors
+- *should* work for many STEM majors... I tried - CS, MechE, IndustrialE, AerospaceE, SystemsE, EE - all of which worked
 - lacks "take MATH XXX OR MATH XXX" functionality
 - incompatible with CS + X, Math, and some LAS majors (still need to test it out with more)
+- specific majors I tried that didn't work - Accountancy, Jazz Performance (LOL)
 */
 const got = require('got');
 const cheerio = require('cheerio');
@@ -10,9 +11,9 @@ const chalk = require('chalk');
 const fs = require('fs');
 
 // CHANGE THESE VARIABLES TO THE MAJOR YOU WANT TO SCRAPE
-const MAJOR_TITLE = "Aerospace Engineering";
-const MAJOR_CODE = "AE";
-const DEG_URL = 'http://catalog.illinois.edu/undergraduate/engineering/aerospace-engineering-bs/#degreerequirementstext';
+const MAJOR_TITLE = "Electrical Engineering";
+const MAJOR_CODE = "EE";
+const DEG_URL = "http://catalog.illinois.edu/undergraduate/engineering/electrical-engineering-bs/#degreerequirementstext";
 
 var db; 
 fs.readFile('db.json', 'utf8', function (err, data) {
