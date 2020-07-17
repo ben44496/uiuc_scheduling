@@ -1,0 +1,141 @@
+{
+    "computer_science": {
+        "credits"       : 128,
+        "min_t_gpa"     : 2.0,
+        "min_o_gpa"     : 2.0,
+        "AND": { 
+            "key": "AND",
+            "description": "Major requirements",
+            "classes": ["ENG 100", "PHYS 211", "PHYS 212", "MATH 221", "MATH 231", "MATH 241", "MATH 415", "CS 125", "CS 126", "CS 173", "CS 210", "CS 225", "CS 233", "CS 241", "CS 357", "CS 361", "CS 374", "CS 421"],
+            "OR_science" : {
+                "choose": 1,
+                "classes": ["AE 202", "ANTH 249", "ASTR 210", "ASTR 350", "ATMS 100", "ATMS 120", "ATMS 140", "ATMS 201", "BIOE 205", "BIOE 206", "CEE 201", "CEE 202", "CHEM 102", "CHEM 103", "CPSC 112", "CPSC 265", "CPSC 270", "DANC 345", "FSHN 101", "FSHN 120", "GEOL 107", "GEOL 111", "GEOL 117", "GEOL 118", "GEOL 143", "GEOL 208", "IB 103", "IB 104", "IB 150", "KIN 150", "MCB 150", "MCB 244", "NPRE 247", "NRES 100", "NRES 102", "PLPA 204", "PSYC 204", "PSYC 224", "PSYC 248", "SHS 240", "SHS 280"]
+            },
+            "OR_team_project": { 
+                "choose": 1,
+                "classes": ["CS 427", "CS 428", "CS 429", "CS 445", "CS 465", "CS 467", "CS 493", "CS 494", "CS 497", "CS 498"]
+            },
+            "OR_focus_area": {
+                "choose": 1,                                                                          
+                "groups": {
+                    "software_foundations": {
+                        "OR": {
+                            "choose": 3, 
+                            "classes": ["CS 422", "CS 426", "CS 427", "CS 428", "CS 429", "CS 476", "CS 477", "CS 492", "CS 498", "CS 522", "CS 524", "CS 526", "CS 527", "CS 528", "CS 576", "CS 598"]
+                        }
+                    },
+                    "algorithms_and_models_of_computation":{
+                        "OR": {
+                            "choose": 3,
+                            "classes": ["CS 413", "CrS 473", "CS 475", "CS 476", "CS 477", "CS 481", "CS 482", "CS 498", "CS 571", "CS 572", "CS 573", "CS 574", "CS 575", "CS 576", "CS 579", "CS 583", "CS 584", "CS 598"]
+                        }
+                    },
+                    "intelligence_and_big_data": {
+                        "OR": {
+                            "choose": 3,
+                            "classes": ["CS 410", "CS 411", "CS 412", "CS 414", "CS 440", "CS 445", "ECE 470", "CS 446", "CS 447", "CS 466", "CS 467", "CS 498", "CS 510", "CS 511", "CS 512", "CS 543", "CS 544", "CS 546", "CS 548", "CS 598"]
+                        }
+                    },
+                    "human_and_social_impact": {
+                        "OR": {
+                            "choose": 3,
+                            "classes": ["CS 460", "CS 461", "CS 463", "CS 465", "CS 467", "CS 468", "CS 498", "CS 563", "CS 565"]
+                        }
+                    },
+                    "media": {
+                        "OR": {
+                            "choose": 3,
+                            "classes": ["CS 414", "CS 418", "CS 419", "CS 445", "CS 465", "CS 467", "CS 468", "CS 498", "CS 519", "CS 565", "CS 598"]
+                        }
+                    },
+                    "scientific_parallel_and_high_performance_computing": {
+                        "OR":{
+                            "choose": 3,
+                            "classes": ["CS 419", "CS 450", "CS 457", "CS 466", "CS 482", "CS 483", "CS 484", "CS 498", "CS 519", "CS 554", "CS 555", "CS 556", "CS 558"]
+                        }
+                    },
+                    "distributed_systems_networking_and_security": {
+                        "OR": {
+                            "choose": 3,
+                            "classes": ["CS 423", "CS 424", "CS 425", "CS 431", "CS 436", "CS 438", "CS 439", "CS 460", "CS 461", "CS 463", "CS 483", "CS 484", "CS 498", "CS 523", "CS 524", "CS 525", "CS 524", "CS 525", "CS 538", "CS 563"]
+                        }
+                    },
+                    "machines": {
+                        "OR": {
+                            "choose": 3,
+                            "classes": ["CS 423", "CS 424", "CS 426", "CS 431", "CS 433", "CS 484", "CS 498", "CS 523", "CS 526", "CS 533", "CS 536", "CS 541", "CS 584", "CS 598"]
+                        }
+                    }
+                }
+            },
+            "OR_electives": {
+                "choose": 2,
+                "classes": ["CS 4*"]
+            }
+
+        }
+
+    },
+    "mathematics": {
+        "credits": 120,
+        "min_t_gpa": 0.0,
+        "min_o_gpa": 0.0,
+        "AND": {
+            "AND": {
+                "classes": ["MATH 241", "MATH 416"],
+                "OR_1": {
+                    "choose": 1,
+                    "classes": ["MATH 347", "MATH 348"]
+                },
+                "OR_2": {
+                    "choose": 1,
+                    "classes": ["MATH 417", "MATH 427"]
+                },
+                "OR_3": {
+                    "choose": 1,
+                    "classes": ["MATH 424", "MATH 444", "MATH 447"]
+                },
+                "OR_4": {
+                    "choose": 1,
+                    "classes": ["MATH 461", "STAT 400"]
+                },
+                "OR_5": {
+                    "choose": 1,
+                    "classes": ["CS 101", "CS 125"]
+                }
+            },
+            "OR_focus_area": {
+                "choose": 2,
+                "groups": {
+                    "geometry": {
+                        "name": "geometry",
+                        "OR": {
+                            "choose": 1,
+                            "classes": ["MATH 402", "MATH 403", "MATH 423", "MATH 481"]
+                        }
+                    },
+                    "differential_equations_and_complex_analysis": {
+                        "name": "differential_equations_and_complex_analysis",
+                        "OR": {
+                            "choose": 1,
+                            "classes": ["MATH 441", "MATH 446", "MATH 448"]
+                        }
+                    },
+                    "number_theory": {
+                        "name": "number_theory",
+                        "OR": {
+                            "choose": 1,
+                            "classes": ["MATH 453"]
+                        }
+                    }
+                }
+            },
+            "OR_electives": {
+                "choose": 2,
+                "classes": ["MATH 400", "CS 440"]
+            }
+        }
+    }
+    
+}
+
