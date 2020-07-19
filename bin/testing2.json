@@ -1,1 +1,129 @@
-{"name": "AND", "description": "some AND requirement"}
+{
+    "computer_science": {
+        "credits": 128,
+        "min_t_gpa": 2.0,
+        "min_o_gpa": 2.0,
+        "AND": {
+            "key": "AND",
+            "description": "Computer Science major requirements.",
+            "classes": [
+                "ENG 100",
+                "PHYS 211",
+                "PHYS 212",
+                "MATH 221",
+                "MATH 231",
+                "MATH 241",
+                "MATH 415",
+                "CS 125",
+                "CS 126",
+                "CS 173",
+                "CS 210",
+                "CS 225",
+                "CS 233",
+                "CS 241",
+                "CS 357",
+                "CS 361",
+                "CS 374",
+                "CS 421"
+            ],
+            "OR_electives": {
+                "key": "OR_electives",
+                "choose": 2,
+                "classes": [
+                    "CS 4*"
+                ]
+            }
+        }
+    },
+    "mathematics": {
+        "credits": 120,
+        "min_t_gpa": 0.0,
+        "min_o_gpa": 0.0,
+        "AND": {
+            "key": "AND",
+            "description": "Math major requirements.",
+            "AND": {
+                "key": "AND",
+                "description": "AND",
+                "classes": [
+                    "MATH 241",
+                    "MATH 416"
+                ],
+                "OR_2": {
+                    "key": "OR_2",
+                    "choose": 1,
+                    "classes": [
+                        "MATH 417",
+                        "MATH 427"
+                    ]
+                },
+                "OR_3": {
+                    "key": "OR_3",
+                    "choose": 1,
+                    "classes": [
+                        "MATH 424",
+                        "MATH 444",
+                        "MATH 447"
+                    ]
+                },
+                "OR_4": {
+                    "key": "OR_4",
+                    "choose": 1,
+                    "classes": [
+                        "MATH 461",
+                        "STAT 400"
+                    ]
+                }
+            },
+            "OR_focus_area": {
+                "key": "OR_focus_area",
+                "choose": 2,
+                "groups": {
+                    "geometry": {
+                        "key": "geometry",
+                        "OR": {
+                            "key": "OR",
+                            "choose": 1,
+                            "classes": [
+                                "MATH 402",
+                                "MATH 403",
+                                "MATH 423",
+                                "MATH 481"
+                            ]
+                        }
+                    },
+                    "differential_equations_and_complex_analysis": {
+                        "key": "differential_equations_and_complex_analysis",
+                        "OR": {
+                            "key": "OR",
+                            "choose": 1,
+                            "classes": [
+                                "MATH 441",
+                                "MATH 446",
+                                "MATH 448"
+                            ]
+                        }
+                    },
+                    "number_theory": {
+                        "key": "number_theory",
+                        "OR": {
+                            "key": "OR",
+                            "choose": 1,
+                            "classes": [
+                                "MATH 453"
+                            ]
+                        }
+                    }
+                }
+            },
+            "OR_electives": {
+                "key": "OR_electives",
+                "choose": 2,
+                "classes": [
+                    "MATH 400",
+                    "CS 440"
+                ]
+            }
+        }
+    }
+}

@@ -1,13 +1,79 @@
 {
-    "AND": {
-        "name": "AND",
-        "description": "some AND requirement",
-        "classes": ["ENG 100", "PHYS 211", "PHYS 212", "MATH 221", "MATH 231", "MATH 241", "MATH 415", "CS 125", "CS 126", "CS 173", "CS 210", "CS 225", "CS 233", "CS 241", "CS 357", "CS 361", "CS 374", "CS 421"],
-        "OR_science" : {
-            "name": "OR_science",
-            "description": "This is the science elective requirement",
-            "choose": 1,
-            "classes": ["AE 202", "ANTH 249", "ASTR 210", "ASTR 350", "ATMS 100", "ATMS 120", "ATMS 140", "ATMS 201", "BIOE 205", "BIOE 206", "CEE 201", "CEE 202", "CHEM 102", "CHEM 103", "CPSC 112", "CPSC 265", "CPSC 270", "DANC 345", "FSHN 101", "FSHN 120", "GEOL 107", "GEOL 111", "GEOL 117", "GEOL 118", "GEOL 143", "GEOL 208", "IB 103", "IB 104", "IB 150", "KIN 150", "MCB 150", "MCB 244", "NPRE 247", "NRES 100", "NRES 102", "PLPA 204", "PSYC 204", "PSYC 224", "PSYC 248", "SHS 240", "SHS 280"]
+    "computer_science": {
+        "credits": 128,
+        "min_t_gpa": 2.0,
+        "min_o_gpa": 2.0,
+        "AND": {
+            "name": "AND",
+            "description": "some AND requirement",
+            "classes": [
+                "ENG 100",
+                "PHYS 211",
+                "PHYS 212",
+                "MATH 221",
+                "MATH 231",
+                "MATH 241",
+                "MATH 415",
+                "CS 125",
+                "CS 126",
+                "CS 173",
+                "CS 210",
+                "CS 225",
+                "CS 233",
+                "CS 241",
+                "CS 357",
+                "CS 361",
+                "CS 374",
+                "CS 421"
+            ],
+            "OR_science": {
+                "name": "OR_science",
+                "description": "This is the science elective requirement",
+                "choose": 1,
+                "classes": [
+                    "AE 202",
+                    "ANTH 249",
+                    "ASTR 210",
+                    "ASTR 350",
+                    "ATMS 100",
+                    "ATMS 120",
+                    "ATMS 140",
+                    "ATMS 201",
+                    "BIOE 205",
+                    "BIOE 206",
+                    "CEE 201",
+                    "CEE 202",
+                    "CHEM 102",
+                    "CHEM 103",
+                    "CPSC 112",
+                    "CPSC 265",
+                    "CPSC 270",
+                    "DANC 345",
+                    "FSHN 101",
+                    "FSHN 120",
+                    "GEOL 107",
+                    "GEOL 111",
+                    "GEOL 117",
+                    "GEOL 118",
+                    "GEOL 143",
+                    "GEOL 208",
+                    "IB 103",
+                    "IB 104",
+                    "IB 150",
+                    "KIN 150",
+                    "MCB 150",
+                    "MCB 244",
+                    "NPRE 247",
+                    "NRES 100",
+                    "NRES 102",
+                    "PLPA 204",
+                    "PSYC 204",
+                    "PSYC 224",
+                    "PSYC 248",
+                    "SHS 240",
+                    "SHS 280"
+                ]
+            }
         }
     }
 }
